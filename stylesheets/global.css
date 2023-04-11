@@ -110,6 +110,9 @@ main {
   border-top: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
   border-left: 1px solid #dcdcdc;
+  position: relative;
+  background-color: white;
+  top: 1px;
 }
 .tech-spans > span {
   margin: 9px;
