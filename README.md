@@ -170,3 +170,23 @@ Good luck! It's time to go to step 1!
 [aa-times-large]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/1230px-full-aa-times.png
 [disable cache]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-Responsive-Design/response-design-projects/aa-times/assets/devtools-enable-cache.png
 [starter]: https://github.com/appacademy/practice-for-week-07-aa-times-long-practice
+
+
+.main1 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "header header"
+                         "cont video"    
+} 
+.heading-type-1 {
+    grid-area: header;
+}
+.subheading-type-1, .author-type-1, .content1, .comments {
+    grid-area: cont;
+    
+}
+.video1, .memo {
+    grid-area: video;
+}

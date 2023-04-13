@@ -7,3 +7,217 @@
 @import url("components/main-nav.css");
 @import url("components/masthead.css");
 @import url("components/search-modal.css");
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas: "main side"
+                         "main side"
+                         "foot sidefoot";
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+
+}
+
+
+
+.main1 {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid;
+    padding-right: 20px;
+}
+.heading-type-1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-style: italic;
+    font-size: 26px;
+}
+
+.content-container1 {
+    display: flex;
+    flex-direction: row;
+}
+.subheading-type-1 {
+    align-self: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.author-type-1 {
+    align-self: auto;
+    color: #6f6f6f;
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 200;
+}
+.content1 {
+    display: block;
+    padding: 10px;
+    list-style-type: disc;
+    font-size: 11px;
+}
+.comments {
+    display: flex;
+    font-size: 11px;
+    color: lightblue;
+}
+.video1 {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 768px) {
+    .video1 iframe {
+      max-width: 80%; /* smaller max-width for smaller screens */
+    }
+  }
+.memo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+
+.main2 {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    border-left: 1px solid;
+    border-color: #e2e2e2;
+    position: relative;
+    flex-grow: 1;
+}
+.main2 .subheading-type-1 {
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+.content-container2 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 10px;
+}
+.author-type-2 {
+    align-self: auto;
+    color: #6f6f6f;
+    font-size: 12px;
+    font-weight: 200;
+}
+.subheading-type-2 {
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+.main2 .subheading-type-3 {
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.content-container3 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e2e2e2;   
+}
+
+.heading-type-3 {
+    align-self: auto;
+    color: #6f6f6f;
+    font-size: 11px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.image1 {
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.main3 {
+    grid-area: foot;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.author-type-3 {
+    align-self: auto;
+    color: #6f6f6f;
+    font-size: 12px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.heading-type-4 {
+    align-self: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 11px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.subarticle-1 {
+    border-right: 1px solid #e2e2e2;
+}
+
+.main4 {
+    grid-area: sidefoot;
+    border-left: 1px solid #e2e2e2;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+.content4 {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.subarticle-bottom-left:hover, .subarticle-bottom-right:hover {
+    background-color: #f7f7f5;
+}
